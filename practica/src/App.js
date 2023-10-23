@@ -1,4 +1,5 @@
 import './App.css';
+import Boton from './components/Boton';
 import Button from './components/Button';
 import Contador from './components/Contador';
 import { Formulario } from './components/Formulario';
@@ -22,6 +23,7 @@ function App() {
           ? <Formulario setUser={setUser} />
           : <Home user={user} setUser={setUser} />
       }
+        <Boton/>
     </div>
   );
 }
